@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    body {
+margin: 0;
+background: #E6E2D6;
+}
+.loader-container {
+position: absolute;
+top: calc(50% - 65px);
+left: calc(50% - 65px);
+width: 100px;
+height: 100px;
+background: #BDE2E0;
+border-radius: 50%;
+border: 15px solid #D7695A;
+box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+color: white;
+text-align: center;
+font-weight: bold;
+font-size: 30px;
+line-height: 100px;
+overflow: hidden;
+}
+@keyframes load {
+100% {
+  transform: translateY(-1000px);
+}
+}
+.loader {
+animation: load 3s steps(11, end) infinite;
+}
+    </style>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader">
+        <p>0</p>
+        <p>1</p>
+        <span>20%</span>
+        <span>30%</span>
+        <span>40%</span>
+        <span>50%</span>
+        <span>60%</span>
+        <span>70%</span>
+        <span>80%</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+    </div>
+  </body>
+</html>
